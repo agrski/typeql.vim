@@ -15,3 +15,13 @@ endif
 syntax case match
 
 setlocal iskeyword+=!
+
+" Keywords {{{1
+syn keyword typedbTqlNativeType     thing entity attribute relation role
+syn keyword typedbTqlDataType       long double string boolean datetime
+syn keyword typedbTqlQueryCmd       define undefine match get insert delete
+syn keyword typedbTqlQueryModifier  offset limit group sort asc desc
+syn keyword typedbTqlStatementProp  abstract as has iid isa isa! owns plays regex relates rule sub sub! then type value when
+syn keyword typedbTqlOperator       is like or not
+syn keyword typedbTqlLiteral        false true
+
