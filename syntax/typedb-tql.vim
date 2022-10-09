@@ -25,3 +25,12 @@ syn keyword typedbTqlStatementProp  abstract as has iid isa isa! owns plays rege
 syn keyword typedbTqlOperator       is like or not
 syn keyword typedbTqlLiteral        false true
 
+" Default highlighting
+highlight default link typedbTqlNativeType      Identifier
+highlight default link typedbTqlDataType        Type
+highlight default link typedbTqlQueryCmd        Statement
+highlight default link typedbTqlQueryModifier   Statement
+highlight default link typedbTqlStatementProp   Statement
+highlight default link typedbTqlOperator        Operator
+highlight default link typedbTqlLiteral         Constant
+
