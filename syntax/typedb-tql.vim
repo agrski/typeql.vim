@@ -5,3 +5,8 @@
 
 " Based on the reserved keywords defined in TypeDB's documentation:
 " https://docs.vaticle.com/docs/schema/overview#reserved-keywords
+
+" Prelude {{{1
+if exists("b:current_syntax")
+  finish
+endif
