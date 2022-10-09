@@ -10,3 +10,8 @@
 if exists("b:current_syntax")
   finish
 endif
+
+" Syntax matching options {{{1
+syntax case match
+
+setlocal iskeyword+=!
