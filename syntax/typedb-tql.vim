@@ -25,6 +25,10 @@ syntax keyword typedbTqlStatementProp  abstract as has iid isa isa! owns plays r
 syntax keyword typedbTqlOperator       is like or not
 syntax keyword typedbTqlLiteral        false true
 
+" Comments {{{1
+syntax keyword typedbTqlTodo contained TODO FIXME XXX NOTE
+syntax match typedbTqlComment /#.*$/ contains=typedbTqlTodo
+
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
 highlight default link typedbTqlDataType        Type
@@ -33,4 +37,6 @@ highlight default link typedbTqlQueryModifier   Statement
 highlight default link typedbTqlStatementProp   Statement
 highlight default link typedbTqlOperator        Operator
 highlight default link typedbTqlLiteral         Constant
+highlight default link typedbTqlTodo            Todo
+highlight default link typedbTqlComment         Comment
 
