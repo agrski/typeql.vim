@@ -29,6 +29,9 @@ syntax keyword typedbTqlLiteral        false true
 syntax keyword typedbTqlTodo contained TODO FIXME XXX NOTE
 syntax match typedbTqlComment /#.*$/ contains=typedbTqlTodo
 
+" Strings {{{1
+syntax match typedbTqlString /".*"/
+
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
 highlight default link typedbTqlDataType        Type
@@ -39,4 +42,5 @@ highlight default link typedbTqlOperator        Operator
 highlight default link typedbTqlLiteral         Constant
 highlight default link typedbTqlTodo            Todo
 highlight default link typedbTqlComment         Comment
+highlight default link typedbTqlString          String
 
