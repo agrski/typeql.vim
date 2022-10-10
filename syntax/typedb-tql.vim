@@ -25,7 +25,7 @@ syntax keyword typedbTqlStatementProp  abstract as has iid isa isa! owns plays r
 syntax keyword typedbTqlOperator       is like or not
 syntax keyword typedbTqlLiteral        false true
 
-" Default highlighting
+" Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
 highlight default link typedbTqlDataType        Type
 highlight default link typedbTqlQueryCmd        Statement
