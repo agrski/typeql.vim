@@ -29,6 +29,11 @@ syntax keyword typedbTqlLiteral        false true
 syntax keyword typedbTqlTodo contained TODO FIXME XXX NOTE
 syntax match typedbTqlComment /#.*$/ contains=typedbTqlTodo
 
+" Block {{{1
+syntax match typedbTqlVar /\$[a-zA-Z-_]\+/ contained
+syntax match typedbTqlBlockDelimiter /[{}()]/ contained
+syntax region typedbTqlBlock start='{' end='}' contains=typedbTqlVar,typedbTqlStatementProp,typedbTqlBlockDelimiter fold transparent
+
 " Strings {{{1
 syntax match typedbTqlString /".*"/
 
@@ -40,7 +45,12 @@ highlight default link typedbTqlQueryModifier   Statement
 highlight default link typedbTqlStatementProp   Statement
 highlight default link typedbTqlOperator        Operator
 highlight default link typedbTqlLiteral         Constant
+
 highlight default link typedbTqlTodo            Todo
 highlight default link typedbTqlComment         Comment
+
+highlight default link typedbTqlVar             Identifier
+highlight default link typedbTqlBlockDelimiter  Structure
+
 highlight default link typedbTqlString          String
 
