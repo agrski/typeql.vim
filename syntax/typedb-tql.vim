@@ -45,6 +45,7 @@ syntax region typedbTqlBlock
 syntax keyword  typedbTqlBoolean    false true
 syntax match    typedbTqlString     /".*"/
 syntax match    typedbTqlString     /'.*'/
+syntax match    typedbTqlLong       /\v(\+|-)?[0-9]+/
 
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
@@ -65,4 +66,4 @@ highlight default link typedbTqlBlockDelimiter  Structure
 
 highlight default link typedbTqlBoolean         Constant
 highlight default link typedbTqlString          String
-
+highlight default link typedbTqlLong            Number
