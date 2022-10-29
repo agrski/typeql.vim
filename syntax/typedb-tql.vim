@@ -36,7 +36,11 @@ syntax match typedbTqlComment /#.*$/ contains=typedbTqlTodo
 " Block {{{1
 syntax match typedbTqlVar /\$[a-zA-Z-_]\+/ contained
 syntax match typedbTqlBlockDelimiter /[{}()]/ contained
-syntax region typedbTqlBlock start='{' end='}' contains=typedbTqlVar,typedbTqlStatementProp,typedbTqlBlockDelimiter fold transparent
+syntax region typedbTqlBlock
+      \ start='{'
+      \ end='}'
+      \ contains=typedbTqlVar,typedbTqlThingVarConstraint,typedbTqlBlockDelimiter
+      \ fold transparent
 
 " Strings {{{1
 syntax match typedbTqlString /".*"/
