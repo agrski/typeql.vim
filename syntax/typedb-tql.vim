@@ -23,8 +23,8 @@ syntax keyword typedbTqlDataType       long double string boolean datetime
 syntax keyword typedbTqlTypeVarConstraint abstract type sub sub! owns plays as regex when then relates @key
 syntax keyword typedbTqlQueryCmd       define undefine match get insert delete compute
 syntax keyword typedbTqlQueryModifier  offset limit sort asc desc
-syntax keyword typedbTqlStatementProp  has iid isa isa! value
-syntax keyword typedbTqlOperator       is like or not
+syntax keyword typedbTqlThingVarConstraint  has iid is isa isa! value
+syntax keyword typedbTqlOperator       like or not
 syntax keyword typedbTqlLiteral        false true
 
 " Comments {{{1
@@ -44,7 +44,7 @@ highlight default link typedbTqlNativeType      Identifier
 highlight default link typedbTqlDataType        Type
 highlight default link typedbTqlQueryCmd        Statement
 highlight default link typedbTqlQueryModifier   Statement
-highlight default link typedbTqlStatementProp   Statement
+highlight default link typedbTqlThingVarConstraint   Statement
 highlight default link typedbTqlOperator        Operator
 highlight default link typedbTqlLiteral         Constant
 
