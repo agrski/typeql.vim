@@ -44,6 +44,7 @@ syntax region typedbTqlBlock
 " Literals {{{1
 syntax keyword  typedbTqlBoolean    false true
 syntax match    typedbTqlString     /".*"/
+syntax match    typedbTqlString     /'.*'/
 
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
