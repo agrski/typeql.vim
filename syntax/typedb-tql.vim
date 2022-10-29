@@ -20,9 +20,10 @@ setlocal iskeyword+=!
 " Keywords {{{1
 syntax keyword typedbTqlNativeType     thing entity attribute relation role rule
 syntax keyword typedbTqlDataType       long double string boolean datetime
+syntax keyword typedbTqlTypeVarConstraint abstract type sub sub! owns plays as regex when then relates @key
 syntax keyword typedbTqlQueryCmd       define undefine match get insert delete compute
 syntax keyword typedbTqlQueryModifier  offset limit sort asc desc
-syntax keyword typedbTqlStatementProp  abstract as has iid isa isa! owns plays regex relates rule sub sub! then type value when
+syntax keyword typedbTqlStatementProp  has iid isa isa! value
 syntax keyword typedbTqlOperator       is like or not
 syntax keyword typedbTqlLiteral        false true
 
