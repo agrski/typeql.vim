@@ -18,16 +18,16 @@ syntax case match
 setlocal iskeyword+=!
 
 " Keywords {{{1
-syntax keyword typedbTqlNativeType     thing entity attribute relation role rule
-syntax keyword typedbTqlDataType       long double string boolean datetime
-syntax keyword typedbTqlTypeVarConstraint abstract type sub sub! owns plays as regex when then relates @key
-syntax keyword typedbTqlQueryCmd       define undefine match get insert delete compute
-syntax keyword typedbTqlQueryModifier  offset limit sort asc desc
-syntax keyword typedbTqlAggregateCmd   group count min max mean median std sum
+syntax keyword typedbTqlNativeType          thing entity attribute relation role rule
+syntax keyword typedbTqlDataType            long double string boolean datetime
+syntax keyword typedbTqlTypeVarConstraint   abstract type sub sub! owns plays as regex when then relates @key
+syntax keyword typedbTqlQueryCmd            define undefine match get insert delete compute
+syntax keyword typedbTqlQueryModifier       offset limit sort asc desc
+syntax keyword typedbTqlAggregateCmd        group count min max mean median std sum
 syntax keyword typedbTqlThingVarConstraint  has iid is isa isa! value
-syntax keyword typedbTqlOperator       or not
-syntax keyword typedbTqlPredicate      = != < <= > >= like contains
-syntax keyword typedbTqlLiteral        false true
+syntax keyword typedbTqlOperator            or not
+syntax keyword typedbTqlPredicate           = != < <= > >= like contains
+syntax keyword typedbTqlLiteral             false true
 
 " Comments {{{1
 syntax keyword typedbTqlTodo contained TODO FIXME XXX NOTE
