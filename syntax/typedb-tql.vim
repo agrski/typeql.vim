@@ -4,8 +4,8 @@
 " Created:      2022 Oct 09
 " Last Change:  2022 Oct 29
 
-" Based on the reserved keywords defined in TypeDB's documentation:
-" https://docs.vaticle.com/docs/schema/overview#reserved-keywords
+" Based on the ANTLR grammar defined for TypeQL:
+" https://github.com/vaticle/typeql/blob/fd78c825e87058293290d4801834593823a329a8/grammar/TypeQL.g4
 
 " Prelude {{{1
 if exists("b:current_syntax")
