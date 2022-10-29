@@ -27,7 +27,6 @@ syntax keyword typedbTqlQueryModifier       offset limit sort asc desc
 syntax keyword typedbTqlAggregateCmd        group count min max mean median std sum
 syntax keyword typedbTqlOperator            or not
 syntax keyword typedbTqlPredicate           = != < <= > >= like contains
-syntax keyword typedbTqlLiteral             false true
 
 " Comments {{{1
 syntax keyword typedbTqlTodo contained TODO FIXME XXX NOTE
@@ -42,8 +41,9 @@ syntax region typedbTqlBlock
       \ contains=typedbTqlVar,typedbTqlThingVarConstraint,typedbTqlBlockDelimiter
       \ fold transparent
 
-" Strings {{{1
-syntax match typedbTqlString /".*"/
+" Literals {{{1
+syntax keyword  typedbTqlBoolean    false true
+syntax match    typedbTqlString     /".*"/
 
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
@@ -55,7 +55,6 @@ highlight default link typedbTqlQueryModifier   Statement
 highlight default link typedbTqlAggregateCmd    Statement
 highlight default link typedbTqlOperator        Operator
 highlight default link typedbTqlPredicate       Operator
-highlight default link typedbTqlLiteral         Constant
 
 highlight default link typedbTqlTodo            Todo
 highlight default link typedbTqlComment         Comment
@@ -63,5 +62,6 @@ highlight default link typedbTqlComment         Comment
 highlight default link typedbTqlVar             Identifier
 highlight default link typedbTqlBlockDelimiter  Structure
 
+highlight default link typedbTqlBoolean         Constant
 highlight default link typedbTqlString          String
 
