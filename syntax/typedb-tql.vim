@@ -65,7 +65,7 @@ highlight default link typedbTqlComment         Comment
 highlight default link typedbTqlVar             Identifier
 highlight default link typedbTqlBlockDelimiter  Structure
 
-highlight default link typedbTqlBoolean         Constant
+highlight default link typedbTqlBoolean         Boolean
 highlight default link typedbTqlString          String
 highlight default link typedbTqlLong            Number
 highlight default link typedbTqlDouble          Float
