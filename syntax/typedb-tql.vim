@@ -25,6 +25,7 @@ syntax keyword typedbTqlQueryCmd       define undefine match get insert delete c
 syntax keyword typedbTqlQueryModifier  offset limit sort asc desc
 syntax keyword typedbTqlThingVarConstraint  has iid is isa isa! value
 syntax keyword typedbTqlOperator       or not
+syntax keyword typedbTqlPredicate      = != < <= > >= like contains
 syntax keyword typedbTqlLiteral        false true
 
 " Comments {{{1
