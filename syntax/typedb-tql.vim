@@ -18,9 +18,9 @@ syntax case match
 setlocal iskeyword+=!
 
 " Keywords {{{1
-syntax keyword typedbTqlNativeType     thing entity attribute relation role
+syntax keyword typedbTqlNativeType     thing entity attribute relation role rule
 syntax keyword typedbTqlDataType       long double string boolean datetime
-syntax keyword typedbTqlQueryCmd       define undefine match get insert delete
+syntax keyword typedbTqlQueryCmd       define undefine match get insert delete compute
 syntax keyword typedbTqlQueryModifier  offset limit group sort asc desc
 syntax keyword typedbTqlStatementProp  abstract as has iid isa isa! owns plays regex relates rule sub sub! then type value when
 syntax keyword typedbTqlOperator       is like or not
