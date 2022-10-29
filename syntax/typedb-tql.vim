@@ -24,7 +24,7 @@ syntax keyword typedbTqlTypeVarConstraint abstract type sub sub! owns plays as r
 syntax keyword typedbTqlQueryCmd       define undefine match get insert delete compute
 syntax keyword typedbTqlQueryModifier  offset limit sort asc desc
 syntax keyword typedbTqlThingVarConstraint  has iid is isa isa! value
-syntax keyword typedbTqlOperator       like or not
+syntax keyword typedbTqlOperator       or not
 syntax keyword typedbTqlLiteral        false true
 
 " Comments {{{1
