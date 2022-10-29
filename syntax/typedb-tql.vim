@@ -44,10 +44,13 @@ syntax match typedbTqlString /".*"/
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
 highlight default link typedbTqlDataType        Type
+highlight default link typedbTqlTypeVarConstraint   Statement
+highlight default link typedbTqlThingVarConstraint  Operator
 highlight default link typedbTqlQueryCmd        Statement
 highlight default link typedbTqlQueryModifier   Statement
-highlight default link typedbTqlThingVarConstraint   Statement
+highlight default link typedbTqlAggregateCmd    Statement
 highlight default link typedbTqlOperator        Operator
+highlight default link typedbTqlPredicate       Operator
 highlight default link typedbTqlLiteral         Constant
 
 highlight default link typedbTqlTodo            Todo
