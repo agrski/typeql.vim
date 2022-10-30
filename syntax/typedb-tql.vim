@@ -26,7 +26,8 @@ syntax keyword typedbTqlQueryCmd            compute define delete get insert mat
 syntax keyword typedbTqlQueryModifier       asc desc limit offset sort
 syntax keyword typedbTqlAggregateCmd        count group max mean median min std sum
 syntax keyword typedbTqlOperator            not or
-syntax keyword typedbTqlPredicate           != < <= = > >= contains like
+syntax keyword typedbTqlPredicate           != < <= = > >= like
+syntax match   typedbTqlPredicate           /contains/
 
 " Comments {{{1
 syntax keyword typedbTqlTodo contained FIXME NOTE TODO XXX
