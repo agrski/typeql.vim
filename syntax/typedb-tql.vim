@@ -54,25 +54,25 @@ syntax region typedbTqlBlock
       \ fold transparent
 
 " Default highlighting {{{1
-highlight default link typedbTqlNativeType      Identifier
-highlight default link typedbTqlDataType        Type
+highlight default link typedbTqlNativeType          Identifier
+highlight default link typedbTqlDataType            Type
 highlight default link typedbTqlTypeVarConstraint   Statement
 highlight default link typedbTqlThingVarConstraint  Operator
-highlight default link typedbTqlQueryCmd        Statement
-highlight default link typedbTqlQueryModifier   Statement
-highlight default link typedbTqlAggregateCmd    Statement
-highlight default link typedbTqlOperator        Operator
-highlight default link typedbTqlPredicate       Operator
+highlight default link typedbTqlQueryCmd            Statement
+highlight default link typedbTqlQueryModifier       Statement
+highlight default link typedbTqlAggregateCmd        Statement
+highlight default link typedbTqlOperator            Operator
+highlight default link typedbTqlPredicate           Operator
 
-highlight default link typedbTqlTodo            Todo
-highlight default link typedbTqlComment         Comment
+highlight default link typedbTqlTodo                Todo
+highlight default link typedbTqlComment             Comment
 
-highlight default link typedbTqlVar             Identifier
-highlight default link typedbTqlBlockDelimiter  Structure
+highlight default link typedbTqlVar                 Identifier
+highlight default link typedbTqlBlockDelimiter      Structure
 
-highlight default link typedbTqlBoolean         Boolean
-highlight default link typedbTqlString          String
-highlight default link typedbTqlLong            Number
-highlight default link typedbTqlDouble          Float
-highlight default link typedbTqlDate            Constant
-highlight default link typedbTqlDateTime        Constant
+highlight default link typedbTqlBoolean             Boolean
+highlight default link typedbTqlString              String
+highlight default link typedbTqlLong                Number
+highlight default link typedbTqlDouble              Float
+highlight default link typedbTqlDate                Constant
+highlight default link typedbTqlDateTime            Constant
