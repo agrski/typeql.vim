@@ -42,6 +42,7 @@ syntax match    typedbTqlDate       /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][
 syntax match    typedbTqlDateTime   /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-6][0-9](:[0-6][0-9](\.[0-9]{1,3})?)?/
 
 " Variables {{{1
+syntax match typedbTqlVar /\$_/
 syntax match typedbTqlVar /\$[a-zA-Z-_]\+/ contained
 
 " Blocks {{{1
