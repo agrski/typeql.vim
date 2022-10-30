@@ -41,8 +41,10 @@ syntax match    typedbTqlDouble     /\v(\+|-)?[0-9]+\.[0-9]+/
 syntax match    typedbTqlDate       /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][0-9]/
 syntax match    typedbTqlDateTime   /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-6][0-9](:[0-6][0-9](\.[0-9]{1,3})?)?/
 
-" Block {{{1
+" Variables {{{1
 syntax match typedbTqlVar /\$[a-zA-Z-_]\+/ contained
+
+" Blocks {{{1
 syntax match typedbTqlBlockDelimiter /[{}()]/ contained
 syntax region typedbTqlBlock
       \ start='{'
