@@ -18,18 +18,18 @@ syntax case match
 setlocal iskeyword+=!
 
 " Keywords {{{1
-syntax keyword typedbTqlNativeType          thing entity attribute relation role rule
-syntax keyword typedbTqlDataType            long double string boolean datetime
-syntax keyword typedbTqlTypeVarConstraint   abstract type sub sub! owns plays as regex when then relates @key
+syntax keyword typedbTqlNativeType          attribute entity relation role rule thing
+syntax keyword typedbTqlDataType            boolean datetime double long string
+syntax keyword typedbTqlTypeVarConstraint   abstract as @key owns plays regex relates sub sub! then type when
 syntax keyword typedbTqlThingVarConstraint  has iid is isa isa! value
-syntax keyword typedbTqlQueryCmd            define undefine match get insert delete compute
-syntax keyword typedbTqlQueryModifier       offset limit sort asc desc
-syntax keyword typedbTqlAggregateCmd        group count min max mean median std sum
-syntax keyword typedbTqlOperator            or not
-syntax keyword typedbTqlPredicate           = != < <= > >= like contains
+syntax keyword typedbTqlQueryCmd            compute define delete get insert match undefine
+syntax keyword typedbTqlQueryModifier       asc desc limit offset sort
+syntax keyword typedbTqlAggregateCmd        count group max mean median min std sum
+syntax keyword typedbTqlOperator            not or
+syntax keyword typedbTqlPredicate           != < <= = > >= contains like
 
 " Comments {{{1
-syntax keyword typedbTqlTodo contained TODO FIXME XXX NOTE
+syntax keyword typedbTqlTodo contained FIXME NOTE TODO XXX
 syntax match typedbTqlComment /#.*$/ contains=typedbTqlTodo
 
 " Literals {{{1
