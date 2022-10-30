@@ -47,6 +47,8 @@ syntax match    typedbTqlString     /".*"/
 syntax match    typedbTqlString     /'.*'/
 syntax match    typedbTqlLong       /\v(\+|-)?[0-9]+/
 syntax match    typedbTqlDouble     /\v(\+|-)?[0-9]+\.[0-9]+/
+syntax match    typedbTqlDate       /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][0-9]/
+syntax match    typedbTqlDateTime   /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][0-9]T[0-2][0-9]:[0-6][0-9](:[0-6][0-9](\.[0-9]{1,3})?)?/
 
 " Default highlighting {{{1
 highlight default link typedbTqlNativeType      Identifier
@@ -69,3 +71,5 @@ highlight default link typedbTqlBoolean         Boolean
 highlight default link typedbTqlString          String
 highlight default link typedbTqlLong            Number
 highlight default link typedbTqlDouble          Float
+highlight default link typedbTqlDate            Constant
+highlight default link typedbTqlDateTime        Constant
