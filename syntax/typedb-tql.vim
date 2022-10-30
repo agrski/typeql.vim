@@ -43,7 +43,7 @@ syntax match    typedbTqlDateTime   /\v([0-9]{4}|(\+|-)[0-9]+)-[0-1][0-9]-[0-3][
 
 " Variables {{{1
 syntax match typedbTqlVar /\$_/
-syntax match typedbTqlVar /\$[a-zA-Z-_]\+/ contained
+syntax match typedbTqlVar /\$[a-zA-Z0-9][a-zA-Z0-9_-]*/
 
 " Blocks {{{1
 syntax match typedbTqlBlockDelimiter /[{}()]/ contained
