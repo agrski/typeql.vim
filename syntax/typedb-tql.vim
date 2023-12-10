@@ -7,6 +7,9 @@
 " Based on the ANTLR grammar defined for TypeQL:
 " https://github.com/vaticle/typeql/blob/fd78c825e87058293290d4801834593823a329a8/grammar/TypeQL.g4
 
+" TODO - make sure to capture of all the below
+" https://github.com/vaticle/typeql/blob/master/grammar/TypeQL.g4
+
 " Prelude {{{1
 if exists("b:current_syntax")
   finish
@@ -16,6 +19,12 @@ endif
 syntax case match
 
 setlocal iskeyword+=!
+
+" INPUT TOKEN PATTERNS
+" 0x[0-9a-f]+
+" (labels... again rules to apply)
+"
+" Add matches for various regions
 
 " Keywords {{{1
 syntax keyword typedbTqlNativeType          attribute entity relation role rule thing
